@@ -1,24 +1,44 @@
+// Task 1.b
 import java.util.ArrayList;
 
-//1.b
-class Team{
-	private String teamName; 	//1.c
-	private int rank;		 	//1.d
-	private ArrayList<String> playerNames; //1.e
+public class Team {
+    // Task 1.c
+    private String name;
 
-//1.f	
-	public Team (String teamName){
-	this.teamName = name;
-	this.playerNames = ArrayList<String>(); 
-	}
+    // Task 1.d
+    private int rank;
 
-//1.h
-	public void setRank(int rank){
+    // Task 1.e
+    private ArrayList<String> players;
 
-	}
+    // Task 1.f
+    public Team(String name) {
+        this.name = name;
+        this.players = new ArrayList<>();
+    }
 
-//1.j
-	public String toString(){
-		return "Hold: " + name + ", Rank: "´+ rank + ", Players:" + players;
-	} 
+    // Task 1.h
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    // Task 1.l
+    public void addPlayer(String playerName) {
+        players.add(playerName);
+    }
+
+    // Task 1.j & 1.m
+   @Override
+public String toString() {
+    String result = "Hold: " + name + " Rang: " + rank + "\n";
+    result += "Spillere:\n";
+
+    // Task 1.m: Add each player on its own line
+    for (String player : players) {
+        result += "- " + player + "\n";
+    }
+
+    return result;
+
+    }
 }

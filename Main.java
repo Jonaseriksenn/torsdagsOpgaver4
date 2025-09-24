@@ -1,48 +1,45 @@
-import java.util.ArrayList;
+// Task 1.a
+public class Main {
+    public static void main(String[] args) {
+        // Task 1.g
+        Team team1 = new Team("BIF");
 
-//1.a
-class Main{
-	public static void main (String [] args);
+        // Task 1.i
+        team1.setRank(1);
 
-//1.g
-	Team t1 = new Team ("Brøndby IF");
-//1.i
-	myTeam.setRank(1);
-	t1.addPlayer("Jonas");
-    t1.addPlayer("Morten");
+        // Task 1.l
+        team1.addPlayer("Filip");
+        team1.addPlayer("Daniel");
 
-//1.k
-   	Team t2 = new Team("FC København");
-    t2.setRank(1);
-    t2.addPlayer("Lucas");
-    t2.addPlayer("Lars");
+        // Task 1.j & 1.m
+        System.out.println(team1);
 
-    Team t3 = new Team("AGF");
-    t3.setRank(2);
-    t3.addPlayer("Emil");
-    t3.addPlayer("Patrick");
+        // Task 1.k
+        Team team2 = new Team("FCK");
+        team2.setRank(2);
+        team2.addPlayer("Lars");
+        team2.addPlayer("Gabriel");
 
-    Team t4 = new Team("FC Nordsjælland");
-    t4.setRank(4);
-    t4.addPlayer("Nikolaj");
-    t4.addPlayer("Kevin");
+        Team team3 = new Team("AGF");
+        team3.setRank(3);
+        team3.addPlayer("Mark");
+        team3.addPlayer("Kevin");
 
-    Team t5 = new Team("Silkeborg IF");
-    t5.setRank(5);
-    t5.addPlayer("Mathias");
-    t5.addPlayer("Oliver");
+        Team team4 = new Team("FCN");
+        team4.setRank(4);
+        team4.addPlayer("Morten");
+        team4.addPlayer("Emil");
 
-
- 		System.out.println(t1);
-        System.out.println(t2);
-        System.out.println(t3);
-        System.out.println(t4);
-        System.out.println(t5);
-        System.out.println(t6);
+        Team team5 = new Team("SIF");
+        team5.setRank(5);
+        team5.addPlayer("Dennis");
+        team5.addPlayer("Peter");
 
 
-
-
-
-
+        // Udskriv alle hold
+        System.out.println(team2);
+        System.out.println(team3);
+        System.out.println(team4);
+        System.out.println(team5);
+    }
 }
